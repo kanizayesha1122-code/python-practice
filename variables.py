@@ -93,3 +93,8 @@ print(help(str.format))
 print(help(str.replace))
 print(help(str.lower))
 print(help(str.upper))
+  
+
+"""parameters that tells the print function how to display the output"""
+print("hell0","world",sep=' ..... ') 
+print("hell0","world",end= '4000  ') 
