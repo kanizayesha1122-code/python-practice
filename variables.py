@@ -95,6 +95,11 @@ print(help(str.lower))
 print(help(str.upper))
   
 
-"""parameters that tells the print function how to display the output"""
+"""parameters that tells the print function how to display the output"""  
 print("hell0","world",sep=' ..... ') 
-print("hell0","world",end= '4000  ') 
+print("hell0","friend",end= ',ali\n') 
+print(' how are u?')
+
+print("hello","jules",sep="\n")
+print("ohh im am studing python lately",end=' ')
+print("i am enjoying it a lot")
