@@ -148,3 +148,48 @@ print("  ali   ".strip())
 
 
 
+# ==========================
+# INTERGERS AND FLOAT
+# ==========================
+
+
+"""printing an int and float"""
+num1=3
+num2=11
+num_1=30.9
+num_2=20.5
+print(num1)
+print(num2)
+print(num_1)
+print(num_2)
+ 
+"""===OPERATONS==="""
+#addition
+print(num1+num2)
+print('the answer of addition is:',num1+num2)
+print('the answer of  float addition is:',num_1+num_2)
+#subtraction
+print('the answer of subtraction is:',num1-num2)
+print('the answer of float subtraction is:',num_1-num_2)
+#multiplcation
+print('the answer of multiplication is:',num1*num2)
+print('the answer of float multiplication is:',num_1*num_2)
+#division
+print('the answer of division is:',num1/num2)
+print('the answer of  float division is:',num_1/num_2)
+#floor division
+print('the answer of floor division is:',num1//num2)
+print('the answer of floot floor division is:',num_1//num_2)
+#exponents
+print('the answer of exponents is:',num1**num2)
+print('the answer of float exponents is:',num_1**num_2)
+#modulus
+print('the answer of modulus is:',num1%num2)
+print('the answer of float modulus is:',num_1%num_2)
+
+"""number of operations together"""
+print(num1+num2-num_2)
+print(num1*num_2/num2)
+print(num1+(num2-num_2))
+print((num1+num_2)/num2)
+print(num1*(num_2/num2))
