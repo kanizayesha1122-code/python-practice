@@ -122,7 +122,7 @@ print(favourite_anime)
 print(favourite_anime.title()) 
 
 """for converting the string in title format and combining strings"""
-print(" my current is:"+book.title() +" and my favourite anime is:" +favourite_anime.title())
+print(" my current is:",book.title() ," and my favourite anime is:", favourite_anime.title())
 print(f"my current book is:  {book} and my favourite anime is: {favourite_anime}")
 print(f"my current book is:  {book.lower()} and my favourite anime is: {len(favourite_anime)} characters long")
 print(f"my current book is:  {book.title()} and my favourite anime is: {favourite_anime.title( )}")
@@ -132,6 +132,19 @@ print(f"my current book is:  {book.title()} and my favourite anime is: {favourit
 print("book:\t"+ book.title())
 print('my favourate animes are:\n\t'+favourite_anime)
 print("the students in group are:\n\tsarah\n\tali\n\tnaina")
-print("my best friends are:\n\tali\n\thumaira\n\tsarah")
+print("my best friends are:\n\tali\n\thumaira\n\tsarah ")
+
+"""for stripping the whitespace in a string"""
+friend='    ali  '
+print(friend.rstrip())  #for removing the right whitespace temporarily
+print(friend.lstrip()) #for removing the left whitespace temporarily
+ 
+ #for permenently removing the white space simply store the value back into a new variable with this method
+new_friend=friend.rstrip()
+new_friend=friend.lstrip() 
+print(new_friend)
+print("  ali   ".rstrip())  
+print("  ali   ".strip())  
+
 
 
