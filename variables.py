@@ -73,6 +73,10 @@ print(introductin2)
 print(introduction)
 print('{} {} i am {}.'.format(greeting,GUEST,name))
 print(f'{greeting} {GUEST} i am {name}.it is so nice to meet u today')
+introduction='hey.nice t meet u.'.format( )
+print(introduction)
+introduction2='hey'+ ' nice to meet u.'
+print(introduction2)
 
 """for printing a strin with more quotations"""
 print("hey.how u doing? john's friend is here")
@@ -102,4 +106,32 @@ print(' how are u?')
 
 print("hello","jules",sep="\n")
 print("ohh im am studing python lately",end=' ')
-print("i am enjoying it a lot")
+print("i am enjoying it a lot" )   
+"""end is used to print the next line in the same line 
+or putting the next line in the same line with a space 
+or any other character we want to put in between the two lines.
+sep is used to put any character we want to put in between the two lines."""
+
+
+"""for converting the string in title format"""
+book="python crash course"
+favourite_anime="fullmetal alchemist brotherhood"
+print(book)
+print(book.title())
+print(favourite_anime)
+print(favourite_anime.title()) 
+
+"""for converting the string in title format and combining strings"""
+print(" my current is:"+book.title() +" and my favourite anime is:" +favourite_anime.title())
+print(f"my current book is:  {book} and my favourite anime is: {favourite_anime}")
+print(f"my current book is:  {book.lower()} and my favourite anime is: {len(favourite_anime)} characters long")
+print(f"my current book is:  {book.title()} and my favourite anime is: {favourite_anime.title( )}")
+
+
+"""adding whitespace to strings"""
+print("book:\t"+ book.title())
+print('my favourate animes are:\n\t'+favourite_anime)
+print("the students in group are:\n\tsarah\n\tali\n\tnaina")
+print("my best friends are:\n\tali\n\thumaira\n\tsarah")
+
+
