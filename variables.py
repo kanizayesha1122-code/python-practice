@@ -156,8 +156,8 @@ print("  ali   ".strip())
 """printing an int and float"""
 num1=3
 num2=11
-num_1=30.9
-num_2=20.5
+num_1=30.9083
+num_2=20.5332
 print(num1)
 print(num2)
 print(num_1)
@@ -193,3 +193,43 @@ print(num1*num_2/num2)
 print(num1+(num2-num_2))
 print((num1+num_2)/num2)
 print(num1*(num_2/num2))
+
+"""incremenation"""
+num3=num1+1
+print(num3)
+num4=num2+1
+print(num4)
+
+"""build_in functins"""
+#using absolute function
+print(abs(-20))
+print(abs(22))
+print(abs(-4.44))
+#using round function
+print(round(num_1))
+print(round(num_1,2))
+print(round(num_1,1))
+print(round(num_2))
+print(round(num_2,3))
+
+"""comparisons"""
+print(num_1<num2)
+print(num_1>num2)
+print(num_1<=num_2)
+print(num_1==num2)
+print(num_1!=num2)
+print(num1<num2)
+
+"""changing string data into int"""
+number1='100'
+number2='200'
+number1=int(number1)
+number2=int(number2)
+print(number1+number2)
+
+number3=int('220')
+number4=int('230')
+print(number3+number4)
+int('200')
+int('500')
+print('200'+'500')
