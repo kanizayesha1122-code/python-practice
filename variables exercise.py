@@ -59,3 +59,15 @@ print(person)
 print(person.lstrip() )
 print(person.rstrip())
 print(person.strip())
+
+"""===2-8==="""
+print("the answer of addition is:",5+3)
+print("the answer of subtraction is:",12-4)
+print("the answer of multiplication is:",2*4)
+print("the answer of division is:",16/2)
+
+"""===2-9==="""
+favnum=56
+message="my fav number is:" +  str(favnum)
+print(message)
+print("my fav number is:" + str(favnum))

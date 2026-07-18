@@ -230,6 +230,8 @@ print(number1+number2)
 number3=int('220')
 number4=int('230')
 print(number3+number4)
-int('200')
-int('500')
-print('200'+'500')
+
+"""changing the int data in string"""
+age=23
+message="hello, kalsoom.happy"+ str(age) +"rd birtday"
+print(message)
