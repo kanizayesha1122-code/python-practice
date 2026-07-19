@@ -43,5 +43,29 @@ print(courses)
 #so append is best for adding ne element as an individual item to a list
 
 #FOR INSERTING ITEMS ANYWHERE IN A LIST
+courses.insert(0,'ls')
+print(courses)
+courses.insert(0,['library science','history'])
+ #can even insert a list since it takes only 2 arguments one place other the value here these 2 values in the list are place on one index that is zero
+num.insert(7,[28,33]) 
+print(num)
+num2=[29,34]
+num.insert(0,num2)
+print(num)
 
+#FOR EXPANDING A LIST
+courses_2=['education','cs']
+courses.extend(courses_2)
+print(courses)
+#for printing the 2nd list as individual items
 
+"""for removing values from a list"""
+courses.remove(courses2)
+print(courses)
+#courses.remove(courses_2)
+#print(courses)   gives us error because the items of courses_2 are added to list original using extend method which make these items individual elements of origial list so to remove them mention the separately 
+#where the insert and extend nes must me mention separately only.while in append even mentioning the whole list makes the remove
+courses.remove(['library science', 'history'])
+print(courses) 
+num.remove(num2)
+print(num)
