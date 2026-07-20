@@ -69,3 +69,59 @@ courses.remove(['library science', 'history'])
 print(courses) 
 num.remove(num2)
 print(num)
+#bcz the 2nd list was initialized before insert so i simply wote the variable name savin that 2nd list and emove it
+#however if a value is inserted directing within a list using method be it 2 or 3 together in a list as one argument i must then mention each separately or the ehole list if not declared separately
+ 
+"""using pop"""
+#for removing last item
+courses.pop()
+print(courses) #for removing the last item n a list.it pops it simply and prints the remainng elements
+#now if we want to find the elements what is being popped simply declare a variable and save that pop walue to it
+popped=num.pop()
+print(num)
+print(popped)
+
+"""for reversing a list """
+courses.reverse() #reverses the index number the last item become 1st
+print(courses)
+num.reverse()
+print(num)
+
+"""for sorting a list acc to alphabet and ascending order"""
+courses.sort()
+print(courses)
+
+#num.sort()
+#print(num)
+#the raeason why i am getting this error is because my list contains another lst so it donts know were to put that inner second list in the main list
+#  File "c:\Users\kaniz\pythonselfpractice\lists.py", line 93, in <module>
+#    num.sort()
+ #   ~~~~~~~~^^
+#TypeError: '<' not supported between instances of 'list' and 'int'
+
+#only a normal list can be sorted [1, 2, 9, 7, [28, 33], 4, 6, 0, 1, 23, 4, 10] this wrong
+numb=[22,3,66,13,0,90,66,45,44,1,4,7]
+numb.sort()
+print(numb)
+ 
+"""for sorting in descending"""
+#1st sort then reverse
+numb.sort()
+numb.reverse()
+print(numb)
+"""===method 2==="""
+#sorting without affecting original items seqesnce of list
+#use sort function and return its value to a variable rather than directly using method on a list and altering original data
+courses3=['bio','geo','zoology','arts']
+sorted_courses3=sorted(courses3)
+print("sorted using function for courses3",sorted_courses3)
+#pint original to check if original is affected
+print("the orignal courses3",courses3)
+
+"""using build in functions"""
+"""===max,sum,min==="""
+print(min(numb))
+print(max(numb))
+print(sum(numb))
+
+"""looping"""
