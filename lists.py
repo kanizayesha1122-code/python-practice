@@ -124,4 +124,20 @@ print(min(numb))
 print(max(numb))
 print(sum(numb))
 
-"""looping"""
+"""using title method to change the format of an item in the list"""
+print(courses[2].title()) #by mentioning the index number of the element in the list with the method title we can change the format to the title
+print(courses[0].title()) 
+print(courses[-1].title()) 
+#print(courses[0:-1].title()) #cant change format of range of list but only one item at a time
+print(courses[-2].title()) 
+print(courses[-3].title()) 
+print(courses[-4].title())  #can access the items backwards too
+print(courses[-5].title()) 
+print(courses[-6].title()) 
+print(courses)
+
+"""Using Individual Values from a List for concatenation"""
+print("my 1st favourate subject is "+ courses[-5]+".")
+print("my 2nd favourate subject is "+courses[0]+".")
+message="my 2nd favourate subject is "+courses[8]+"."
+print(message)
