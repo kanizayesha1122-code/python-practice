@@ -19,7 +19,7 @@ print(num[2:])
 print(num[:-1])
 print(num[-1])
 print(courses[2])
-print(courses[0:])
+print(courses[0:]) #it is possible to access a range of ites in a list
 print(courses[2:])
 print(courses[:-1])
 print(courses[-1])
@@ -139,5 +139,49 @@ print(courses)
 """Using Individual Values from a List for concatenation"""
 print("my 1st favourate subject is "+ courses[-5]+".")
 print("my 2nd favourate subject is "+courses[0]+".")
-message="my 2nd favourate subject is "+courses[8]+"."
+message="my favourate subject is "+courses[8]+"."
 print(message)
+
+#print(cSuppose your list has only 10 items.
+#You might expect an error because index 100 doesn't exist.
+#But insert() is special.
+#Python's rule is:
+#If the index is greater than the length of the list, insert at the end.
+# 1. Methods that change the object (return None).
+# #append(),insert(),remove(),sort(),reverse().These modify the original list
+#2. Methods that return a new value
+#len(),sorted(),str.upper(),str.lower()
+#insert() is like writing directly in the notebook. The notebook changes, but the pen doesn't hand you a new notebook afterward.
+#upper() is like making a photocopy of a page with all the letters capitalized. The original notebook stays the same, and you get a new copy.
+#They change the original list, then quietly return None. That's why you call the method first and then print the list afterward.
+# courses.insert(-1,"geology")) cant insert anything in the print function  1st insert then print Many list methods work this way:
+
+courses.insert(100,'arts')
+print(courses)
+
+"""directly modifying elemnts in a list"""
+courses[0]='botany'
+print(courses) #for changing one value with an other we simply make that item equal to that index we want that value to have and replace the previous value
+# before this modificatin['art', 'biology', 'chemistry', 'education', 'english', 'ls', 'maths', 'physics', 'zoology', 'arts']
+#after the modification['botany', 'biology', 'chemistry', 'education', 'english', 'ls', 'maths', 'physics', 'zoology', 'arts']
+
+
+"""starting with an empty list and later adding value to the end of lst"""
+manga=[]
+manga.append('berserk')
+print(manga)
+manga.append('naruto')
+print(manga)
+manga.append('fullmetal alchemist')
+print(manga)
+manga.append('boruto')
+print("my manga list is=",manga)
+#Building lists this way is very common, because you often won’t know the data your users want to store in a program until after the program is running.
+
+#for adding value anywhere in a list at any desipable index use insert which take 2 arguments one index nmber and the itemThe insert() method opens a space at position 0 and stores the value 'ducati' at that location. This operation shifts every other value 
+#in the list one position to the righteappend is for inserting value at the end of any list.nd the extend for adding number of individual values to a list
+manga.extend(['vagabond','monster','vinland saga'])
+print(manga) #the extend operation takes only one argument but by writing it in [] we add another list to exsting list where all elements are added as individual element
+
+del manga[0]
+print(manga)

@@ -233,5 +233,5 @@ print(number3+number4)
 
 """changing the int data in string"""
 age=23
-message="hello, kalsoom.happy"+ str(age) +"rd birtday"
+message="hello, kalsoom.happy "+ str(age) +"rd birtday"
 print(message)
